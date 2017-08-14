@@ -23,6 +23,9 @@ public class Snail {
      * @param size: is the width or height of the table
      */
     public Snail(int size) {
+        if (size < 0) {
+            throw new IllegalArgumentException("the size of the matrix must be positive");
+        }
         this.size = size;
         this.matrix = new int[size][size];
         this.row = 0;
@@ -32,19 +35,15 @@ public class Snail {
     }
 
     /**
-     * avec n entier positif ou nul, renvoyant sous forme de tableau HTML le
-     * "colimaçon" tel que :
+     * with a null or positive n, returns the snail in html
      *
      * printHtml(1): 1
-     *
      * printHtml(2): 1 2 4 3
-     *
      * printHtml(3): 1 2 3 8 9 4 7 6 5
      *
      * @return
      */
     public String printHtml() {
-        checkInputLength();
         StringBuilder sb = new StringBuilder("<table border=\"1\">");
         sb.append(printBody())
                 .append("</table>").toString();
@@ -57,22 +56,19 @@ public class Snail {
      * @return built String
      */
     public String printPlainText() {
-        checkInputLength();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < size; i++) {
-            sb.append("\n");
+            if (i > 0) {
+                sb.append("\n");
+            }
             for (int j = 0; j < size; j++) {
-                sb.append(" ");
+                if (j > 0) {
+                    sb.append(" ");
+                }
                 sb.append(matrix[i][j]);
             }//for
         }//for
         return sb.toString();
-    }
-
-    private void checkInputLength() throws IllegalArgumentException {
-        if (size < 0) {
-            throw new IllegalArgumentException("the size of the matrix must be positive");
-        }
     }
 
     /**
@@ -85,9 +81,9 @@ public class Snail {
         for (int i = 0; i < size; i++) {
             sb.append("<tr>");
             for (int j = 0; j < size; j++) {
-                sb.append("<td>");
-                sb.append(matrix[i][j]);
-                sb.append("</td>");
+                sb.append("<td>")
+                        .append(matrix[i][j])
+                        .append("</td>");
             }
             sb.append("</tr>");
         }
@@ -100,9 +96,10 @@ public class Snail {
     private int[][] matrix() {
         int nb = size * size;
         int i = 1;
-        for (i = 1; i < nb; i++) {
+        while (i < nb) {
             matrix[row][col] = i;
             stepForward();
+            i++;
         }
         matrix[row][col] = i;
         return matrix;

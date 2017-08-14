@@ -1,3 +1,6 @@
+[![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zg2pro/snail?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build](https://travis-ci.org/zg2pro/snail.svg?branch=master)](https://travis-ci.org/zg2pro/snail)
+
 # snail
 Automatically exported from code.google.com/p/snail
 
