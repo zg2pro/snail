@@ -33,6 +33,8 @@ public class SnailTest {
         assertEquals("4998", line2[line2.length -2]);
         String[] penUltimate = lines[998].split(" ");
         assertEquals("5996", penUltimate[penUltimate.length -2]);
-        System.out.println(res);
+        System.out.println(lines[0]);
+        System.out.println(lines[1]);
+        System.out.println(lines[2]);
     }
 }
