@@ -17,6 +17,10 @@ public class SnailTest {
     public void zero() {
         new Snail(0).printPlainText();
     }
+    
+    public void html() {
+        new Snail(2).printHtml();
+    }
 
     @Test
     public void largeMatrix() {

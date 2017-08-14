@@ -45,8 +45,27 @@ public class Snail {
      */
     public String printHtml() {
         StringBuilder sb = new StringBuilder("<table border=\"1\">");
-        sb.append(printBody())
+        sb.append(printHtmlTableBody())
                 .append("</table>").toString();
+        return sb.toString();
+    }
+
+    /**
+     *
+     * @param size
+     * @return built String with tr and td
+     */
+    private String printHtmlTableBody() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < size; i++) {
+            sb.append("<tr>");
+            for (int j = 0; j < size; j++) {
+                sb.append("<td>")
+                        .append(matrix[i][j])
+                        .append("</td>");
+            }
+            sb.append("</tr>");
+        }
         return sb.toString();
     }
 
@@ -68,25 +87,6 @@ public class Snail {
                 sb.append(matrix[i][j]);
             }//for
         }//for
-        return sb.toString();
-    }
-
-    /**
-     *
-     * @param size
-     * @return built String with tr and td
-     */
-    private String printBody() {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < size; i++) {
-            sb.append("<tr>");
-            for (int j = 0; j < size; j++) {
-                sb.append("<td>")
-                        .append(matrix[i][j])
-                        .append("</td>");
-            }
-            sb.append("</tr>");
-        }
         return sb.toString();
     }
 
