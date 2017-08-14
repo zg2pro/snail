@@ -1,5 +1,7 @@
 [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zg2pro/snail?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build](https://travis-ci.org/zg2pro/snail.svg?branch=master)](https://travis-ci.org/zg2pro/snail)
+[![codecov](https://codecov.io/gh/zg2pro/snail/branch/master/graph/badge.svg)](https://codecov.io/gh/zg2pro/snail/branch/master)
+
 
 # snail
 Automatically exported from code.google.com/p/snail
