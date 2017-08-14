@@ -6,7 +6,9 @@ cache:
   directories:
     - $HOME/.m2
 install: true
-script: mvn install
-after_success:
+script: 
+  - mvn install
   - mvn cobertura:cobertura
+  - ls
+after_success:
   - bash <(curl -s https://codecov.io/bash)
