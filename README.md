@@ -10,6 +10,8 @@ I was asked to develop a java class that would produce a printout of numbers wri
 11&nbsp;16&nbsp;15&nbsp;6<br/>
 10&nbsp;9&nbsp;&nbsp;8&nbsp;&nbsp;7
 
+This class, I had to include two public methods to produce a plain text output and an html output, return type had to be String in both methods
+
 And develop it in good fashion, implictly suggesting me to tdd it.
 
 I ended with something looking like what we got here on github.
