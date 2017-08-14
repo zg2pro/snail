@@ -23,8 +23,8 @@ public class Snail {
      * @param size: is the width or height of the table
      */
     public Snail(int size) {
-        if (size < 0) {
-            throw new IllegalArgumentException("the size of the matrix must be positive");
+        if (size < 1) {
+            throw new IllegalArgumentException("the size of the matrix must be strictly positive");
         }
         this.size = size;
         this.matrix = new int[size][size];

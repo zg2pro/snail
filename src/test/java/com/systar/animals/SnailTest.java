@@ -14,7 +14,7 @@ public class SnailTest {
         new Snail(-1).printPlainText();
     }
     
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void zero() {
         new Snail(0).printPlainText();
     }
