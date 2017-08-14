@@ -5,12 +5,9 @@ This code is inspired by an exercise I was asked to follow during (or right afte
 
 I was asked to develop a java class that would produce a printout of numbers written in a snail-y way i.e. :
 
-1  2  3  4
-
-12 13 14 5
-
-11 16 15 6
-
+1&nbsp;&nbsp;2  3  4<br/>
+12 13 14 5<br/>
+11 16 15 6<br/>
 10 9  8  7
 
 And develop it in good fashion, implictly suggesting me to tdd it.
