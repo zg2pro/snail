@@ -1,35 +1,18 @@
 package com.systar.animals;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
 
 /**
  * Unit test for simple Snail.
  */
-public class SnailTest extends TestCase {
+public class SnailTest {
 
     /**
-     * Create the test case
-     *
-     * @param testName name of the test case
+     * test with a high number to control performance
      */
-    public SnailTest(String testName) {
-	super(testName);
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite() {
-	return new TestSuite(SnailTest.class);
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp() throws Exception {
-	String res = new Snail(1000).easyPrint();
-	System.out.println(res);
+    @Test
+    public void testApp() {
+        String res = new Snail(1000).printPlainText();
+        System.out.println(res);
     }
 }
