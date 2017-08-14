@@ -14,10 +14,12 @@ public class SnailTest {
         new Snail(-1).printPlainText();
     }
     
+    @Test
     public void zero() {
         new Snail(0).printPlainText();
     }
     
+    @Test
     public void html() {
         new Snail(2).printHtml();
     }
