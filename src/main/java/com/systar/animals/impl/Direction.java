@@ -1,4 +1,4 @@
-package com.systar.animals;
+package com.systar.animals.impl;
 
 /**
  *

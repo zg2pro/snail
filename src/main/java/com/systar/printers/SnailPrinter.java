@@ -1,6 +1,6 @@
 package com.systar.printers;
 
-import com.systar.animals.Snail;
+import com.systar.animals.ISnail;
 
 /**
  * Object with methods to generate plain text or html nailed matrix
@@ -8,13 +8,13 @@ import com.systar.animals.Snail;
  */
 public class SnailPrinter {
 
-    private Snail snail;
+    private ISnail snail;
 
     /**
      *
      * @param snail
      */
-    public SnailPrinter(Snail snail) {
+    public SnailPrinter(ISnail snail) {
         if (snail == null) {
             throw new IllegalArgumentException("the size of the matrix must be strictly positive");
         }
