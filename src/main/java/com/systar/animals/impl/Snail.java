@@ -1,5 +1,7 @@
 package com.systar.animals.impl;
 
+import com.systar.animals.ISnail;
+
 /**
  * Object with methods to generate plain text or html nailed matrix
  *

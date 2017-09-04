@@ -1,5 +1,6 @@
 package com.systar.animals;
 
+import com.systar.animals.impl.Snail;
 import com.systar.printers.SnailPrinter;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
