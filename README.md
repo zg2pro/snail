@@ -1,5 +1,5 @@
 [![MIT](https://img.shields.io/npm/l/inferno.svg?style=flat-square)](https://github.com/zg2pro/snail/blob/master/LICENSE.md)
-[![Build](https://travis-ci.org/zg2pro/snail.svg?branch=master)](https://travis-ci.org/zg2pro/snail)
+[![Build](https://travis-ci.com/zg2pro/snail.svg?branch=master)](https://travis-ci.com/zg2pro/snail)
 [![codecov](https://codecov.io/gh/zg2pro/snail/branch/master/graph/badge.svg)](https://codecov.io/gh/zg2pro/snail/branch/master)
 [![BCH compliance](https://bettercodehub.com/edge/badge/zg2pro/snail?branch=master)](https://bettercodehub.com/)
 
